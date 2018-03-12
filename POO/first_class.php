@@ -49,6 +49,13 @@
       echo "Estoy Apagandome, !Adios¡";
     }
 
+    function Establece_color($color_carro,$nombre_carro){
+      $this->color=$color_carro;
+
+      echo "El color de ". $nombre_carro ." es: " . $this->color . "<br>";
+
+    }
+
   }
 
 
@@ -58,8 +65,10 @@
 
   $mazda->Girar();
 
-  echo "<br> Ruedas = " . $mazda->ruedas;
+  echo "<br> Ruedas = " . $mazda->ruedas . "<br>";
 
+  $renault->Establece_color("Rojo","Renault");
+  $mazda->Establece_color("Azul", "Mazda");
  ?>
 
 </body>
